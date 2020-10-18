@@ -1,0 +1,11 @@
+.timer {
+    margin-top: 100px;
+    font-weight: bold;
+    text-align: center
+}
+
+.timer-numbers {
+    color: blue;
+    font-family: monospace;
+    font-size: 200%;
+}
