@@ -1,4 +1,4 @@
-let newYear = '1 January 2021 00:00';
+let newYear = '1 January 2022 00:00';
 
 function remainTime(endtime) {
 	let timeLeft = Date.parse(endtime) - Date.parse(new Date());
