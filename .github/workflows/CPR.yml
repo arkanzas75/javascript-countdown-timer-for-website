@@ -1,6 +1,17 @@
-- uses: actions/checkout@v2
+# File: .github/workflows/pull-request.yml
 
-      # Make changes to pull request here
+on:
+  push:
+    branches:
+    - feature-1
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: pull-request
+      uses: repo-sync/pull-request@v2
+      with:
+        destination_branch: "main"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
