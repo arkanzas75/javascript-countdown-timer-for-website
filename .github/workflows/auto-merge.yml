@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: alexwilson/enable-github-automerge-action@main
-        automerge: ${{ secrets.automerge }}
+      with: "${{ secrets.GITHUB_TOKEN }}"
